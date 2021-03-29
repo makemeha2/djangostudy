@@ -1,0 +1,4 @@
+[30/Mar/2021 01:16:43] DEBUG [polls.views:25] vote().question_id : 3
+[30/Mar/2021 01:16:47] DEBUG [polls.views:25] vote().question_id : 3
+[30/Mar/2021 01:16:50] DEBUG [polls.views:25] vote().question_id : 3
+[30/Mar/2021 01:17:28] DEBUG [polls.views:25] vote().question_id : 1

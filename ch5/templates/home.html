@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>shKim Django Applications</h2>
+    <ul>
+        {% comment %}
+            {% for appname in app_list %}
+            {% with appname|add:":"|add:"index" as urlvar %}
+            <li><a href="{% url urlvar %}">{{appname}}</a></li>
+            {% endwith %}
+            {% endfor %}
+        {% endcomment %}
+
+        {% for key, value in verbose_dict.items %}
+            <li><a href="{% url key|add:':index' %}">{{ value }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
